@@ -1,6 +1,13 @@
-import React from "react";
+import { useRef } from "react";
 
-function FormBillComponent() {
+function FormBillComponent({ bill, dispatch }) {
+  const inputRef = useRef();
+
+  function handleInputChange(e) {
+    e.preventDefault();
+    dispatch({ type: "setBill", data: e.target.value });
+  }
+
   return (
     <div className="mb-6">
       <label
@@ -10,11 +17,15 @@ function FormBillComponent() {
         Bill
       </label>
       <input
-        type="text"
+        onChange={handleInputChange}
+        ref={inputRef}
+        value={bill}
+        required
+        autoComplete="off"
+        type="number"
         id="bill"
         className="bg-gray-50 border border-gray-300 rounded-sm focus:outline-primary block w-full h-10 p-2.5 text-neutral-dark-cyan text-lg text-right"
         placeholder="0"
-        required
       ></input>
     </div>
   );

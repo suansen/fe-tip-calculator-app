@@ -1,15 +1,7 @@
-import FormBillComponent from "./form/bill";
-import FormTipComponent from "./form/tip";
-import FormPeopleComponent from "./form/people";
-
-function FormComponent() {
+function FormComponent({ children }) {
   return (
     <div className="w-full md:w-[50%]">
-      <form action="">
-        <FormBillComponent />
-        <FormTipComponent />
-        <FormPeopleComponent />
-      </form>
+      <form action="">{children}</form>
     </div>
   );
 }
