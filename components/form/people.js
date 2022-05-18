@@ -15,7 +15,6 @@ function FormPeopleComponent({ state, dispatch }) {
 
   return (
     <div className="mb-6">
-      <p>{check.toString()}</p>
       <div className="flex justify-between">
         <label
           htmlFor="people"

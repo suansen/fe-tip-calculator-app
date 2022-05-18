@@ -74,11 +74,8 @@ export default function Home() {
       <div className=" bg-neutral-white md:flex p-6 rounded-lg gap-4 w-full md:w-[80%] lg:w-[70%]: xl:w-[60%]">
         <FormComponent>
           <FormBillComponent bill={state.bill} dispatch={dispatch} />
-          {/* <p>{`Bill is ${state.bill}`}</p> */}
           <FormTipComponent reset={state.reset} dispatch={dispatch} />
-          {/* <p>{`Tip is ${state.tip}`}</p> */}
           <FormPeopleComponent state={state} dispatch={dispatch} />
-          <p>{`People is ${state.people}`}</p>
         </FormComponent>
 
         <ResultComponent>
