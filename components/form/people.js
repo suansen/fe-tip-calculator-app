@@ -24,7 +24,7 @@ function FormPeopleComponent({ state, dispatch }) {
         </label>
         {check && (
           <p className="block mb-2 text-sm font-medium text-red-500">
-            Can't be zero
+            Can&apos;t be zero
           </p>
         )}
       </div>

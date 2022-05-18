@@ -28,8 +28,6 @@ function FormTipComponent({ reset, dispatch }) {
   return (
     <div className="mb-6">
       <h2 className="text-neutral-dark-gray-cyan">Select Tip %</h2>
-      {/* <p>Reset is {reset}</p>
-      <p>Active is {active}</p> */}
       <div className="grid grid-cols-3 gap-2">
         <div>
           <ButtonComponent
